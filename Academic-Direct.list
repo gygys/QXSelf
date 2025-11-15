@@ -1,0 +1,32 @@
+# QuantumultX Routing Rules for Academic Publishers - Direct Connection
+# 学术出版商网站直连规则
+# Created for direct access to Elsevier, Cell, and Nature websites
+
+# Elsevier (爱思唯尔)
+# Primary domains
+DOMAIN-SUFFIX,elsevier.com,DIRECT
+DOMAIN-SUFFIX,sciencedirect.com,DIRECT
+# Related services
+DOMAIN-SUFFIX,elsevierhealth.com,DIRECT
+DOMAIN-SUFFIX,elsevierpure.com,DIRECT
+DOMAIN-SUFFIX,scopus.com,DIRECT
+DOMAIN-SUFFIX,mendeley.com,DIRECT
+DOMAIN-SUFFIX,ssrn.com,DIRECT
+
+# Cell Press (Cell出版社)
+# Primary domains
+DOMAIN-SUFFIX,cell.com,DIRECT
+DOMAIN-SUFFIX,cellpress.com,DIRECT
+# Related services
+DOMAIN-SUFFIX,cell.org,DIRECT
+
+# Nature (自然出版集团)
+# Primary domains
+DOMAIN-SUFFIX,nature.com,DIRECT
+DOMAIN-SUFFIX,springernature.com,DIRECT
+# Related services
+DOMAIN-SUFFIX,springer.com,DIRECT
+DOMAIN-SUFFIX,springerlink.com,DIRECT
+DOMAIN-SUFFIX,biomedcentral.com,DIRECT
+DOMAIN-SUFFIX,palgrave.com,DIRECT
+DOMAIN-SUFFIX,nature.org,DIRECT
