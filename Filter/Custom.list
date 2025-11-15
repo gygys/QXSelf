@@ -1,0 +1,45 @@
+# QuantumultX Custom Filter Rules (自定义分流规则)
+# 使用说明：将此文件添加到 QuantumultX 的 [filter_remote] 部分
+# Usage: Add this file to [filter_remote] section in QuantumultX
+
+# 直连规则 (Direct Rules)
+# 国内网站和服务
+HOST-SUFFIX,cn,DIRECT
+HOST-SUFFIX,qq.com,DIRECT
+HOST-SUFFIX,taobao.com,DIRECT
+HOST-SUFFIX,tmall.com,DIRECT
+HOST-SUFFIX,jd.com,DIRECT
+HOST-SUFFIX,weibo.com,DIRECT
+HOST-SUFFIX,baidu.com,DIRECT
+HOST-SUFFIX,163.com,DIRECT
+HOST-SUFFIX,bilibili.com,DIRECT
+HOST-SUFFIX,douyin.com,DIRECT
+
+# 代理规则 (Proxy Rules)
+# 国际网站和服务
+HOST-SUFFIX,google.com,PROXY
+HOST-SUFFIX,youtube.com,PROXY
+HOST-SUFFIX,facebook.com,PROXY
+HOST-SUFFIX,twitter.com,PROXY
+HOST-SUFFIX,instagram.com,PROXY
+HOST-SUFFIX,github.com,PROXY
+HOST-SUFFIX,telegram.org,PROXY
+
+# 拒绝规则 (Reject Rules)
+# 广告和追踪域名
+HOST-SUFFIX,ad.com,REJECT
+HOST-SUFFIX,ads.com,REJECT
+HOST-SUFFIX,analytics.google.com,REJECT
+HOST-KEYWORD,analytics,REJECT
+HOST-KEYWORD,adservice,REJECT
+
+# IP规则 (IP Rules)
+# 局域网直连
+IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,172.16.0.0/12,DIRECT
+IP-CIDR,127.0.0.0/8,DIRECT
+
+# 最终规则 (Final Rule)
+# 其他所有流量使用代理
+FINAL,PROXY

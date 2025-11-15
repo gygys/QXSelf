@@ -1,0 +1,41 @@
+# QuantumultX Ad Block Rules (广告拦截规则)
+# 使用说明：专门用于拦截广告和追踪的分流规则
+# Usage: Specialized filter rules for blocking ads and tracking
+
+# 广告域名 (Ad Domains)
+HOST-SUFFIX,doubleclick.net,REJECT
+HOST-SUFFIX,googleadservices.com,REJECT
+HOST-SUFFIX,googlesyndication.com,REJECT
+HOST-SUFFIX,adservice.google.com,REJECT
+HOST-SUFFIX,applovin.com,REJECT
+HOST-SUFFIX,applvn.com,REJECT
+
+# 国内广告联盟 (Chinese Ad Networks)
+HOST-SUFFIX,mobads.baidu.com,REJECT
+HOST-SUFFIX,cpro.baidu.com,REJECT
+HOST-SUFFIX,pos.baidu.com,REJECT
+HOST-SUFFIX,union.youdao.com,REJECT
+HOST-SUFFIX,ads.95516.com,REJECT
+HOST-SUFFIX,g.tbcdn.cn,REJECT
+
+# 移动广告 (Mobile Ads)
+HOST-SUFFIX,inmobi.com,REJECT
+HOST-SUFFIX,admob.com,REJECT
+HOST-SUFFIX,adcolony.com,REJECT
+HOST-SUFFIX,chartboost.com,REJECT
+
+# 数据追踪 (Tracking)
+HOST-SUFFIX,adjust.com,REJECT
+HOST-SUFFIX,appsflyer.com,REJECT
+HOST-SUFFIX,umeng.com,REJECT
+HOST-SUFFIX,umengcloud.com,REJECT
+HOST-SUFFIX,flurry.com,REJECT
+
+# 关键词拦截 (Keyword Blocking)
+HOST-KEYWORD,adservice,REJECT
+HOST-KEYWORD,analytics,REJECT
+HOST-KEYWORD,advert,REJECT
+HOST-KEYWORD,adsmogo,REJECT
+HOST-KEYWORD,adsage,REJECT
+HOST-KEYWORD,admaster,REJECT
+HOST-KEYWORD,adview,REJECT

@@ -1,0 +1,62 @@
+# QuantumultX Media Streaming Rules (流媒体分流规则)
+# 使用说明：针对流媒体平台的分流规则
+# Usage: Filter rules for media streaming platforms
+
+# Netflix
+HOST-SUFFIX,netflix.com,PROXY
+HOST-SUFFIX,netflix.net,PROXY
+HOST-SUFFIX,nflxext.com,PROXY
+HOST-SUFFIX,nflximg.com,PROXY
+HOST-SUFFIX,nflximg.net,PROXY
+HOST-SUFFIX,nflxso.net,PROXY
+HOST-SUFFIX,nflxvideo.net,PROXY
+HOST-KEYWORD,netflix,PROXY
+
+# YouTube
+HOST-SUFFIX,youtube.com,PROXY
+HOST-SUFFIX,youtubei.googleapis.com,PROXY
+HOST-SUFFIX,ytimg.com,PROXY
+HOST-SUFFIX,googlevideo.com,PROXY
+HOST-KEYWORD,youtube,PROXY
+
+# Disney+
+HOST-SUFFIX,disney.com,PROXY
+HOST-SUFFIX,disneyplus.com,PROXY
+HOST-SUFFIX,disney-plus.net,PROXY
+HOST-SUFFIX,disneystreaming.com,PROXY
+HOST-SUFFIX,dssott.com,PROXY
+
+# Spotify
+HOST-SUFFIX,spotify.com,PROXY
+HOST-SUFFIX,scdn.co,PROXY
+HOST-SUFFIX,spoti.fi,PROXY
+HOST-KEYWORD,spotify,PROXY
+
+# Twitch
+HOST-SUFFIX,twitch.tv,PROXY
+HOST-SUFFIX,ttvnw.net,PROXY
+HOST-SUFFIX,jtvnw.net,PROXY
+HOST-KEYWORD,twitch,PROXY
+
+# HBO
+HOST-SUFFIX,hbo.com,PROXY
+HOST-SUFFIX,hbogo.com,PROXY
+HOST-SUFFIX,hbonow.com,PROXY
+HOST-SUFFIX,hbomax.com,PROXY
+
+# Amazon Prime Video
+HOST-SUFFIX,primevideo.com,PROXY
+HOST-SUFFIX,amazonvideo.com,PROXY
+HOST-SUFFIX,aiv-cdn.net,PROXY
+HOST-SUFFIX,aiv-delivery.net,PROXY
+
+# 国内流媒体 (Chinese Streaming)
+HOST-SUFFIX,bilibili.com,DIRECT
+HOST-SUFFIX,hdslb.com,DIRECT
+HOST-SUFFIX,acgvideo.com,DIRECT
+HOST-SUFFIX,iqiyi.com,DIRECT
+HOST-SUFFIX,iqiyipic.com,DIRECT
+HOST-SUFFIX,youku.com,DIRECT
+HOST-SUFFIX,ykimg.com,DIRECT
+HOST-SUFFIX,qq.com,DIRECT
+HOST-SUFFIX,video.qq.com,DIRECT
